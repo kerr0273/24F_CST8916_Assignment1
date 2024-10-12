@@ -5,10 +5,13 @@ By
 Stephen Kerr
 041165225
 
-<div style="border:1 px solid red;">
-<p style="text-align:center;">Text_content</p>
-</div>
-Introduction
+
+
+
+
+
+
+# Introduction
 
 In this assignment, I will choose to use a real-time chat application.
 
@@ -66,7 +69,7 @@ REST and GraphQL are: (openAI, ChatGPT)
 
 The differences between WebSockets and REST (and GraphQL) are that a new connection needs to be made and authorized with each message using REST, REST is unidirectional, and REST would need to implement polling.  GraphQL does have a subscription feature.  However, it is often implemented using websockets (OpenAI, ChatGPT).
 
-Section 3: Techologoy Recommendation and Justification
+# Section 3: Techologoy Recommendation and Justification
 
 The recommended coding language is python.  That is for me.  Pretty much all languages will be able to implement code to acheive the task, but I know and like python.  It has the FastAPI library which can save a lot of time figuring out websockets.  Or it can use the websocket library directly.  Also, there is lots of documentation for python.
 
@@ -75,10 +78,7 @@ Python has many different webservers that can be used.  I saw a lot of examples 
 
 
 
-
-
-
-References
+# References
 
 Fastapi. (n.d.). FASTAPI. FastAPI. https://fastapi.tiangolo.com/ 
 
