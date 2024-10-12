@@ -5,8 +5,9 @@ By
 Stephen Kerr
 041165225
 
-<p style="text-align:right;">Text_content</p>
-
+<div style="border:1 px solid red;">
+<p style="text-align:center;">Text_content</p>
+</div>
 Introduction
 
 In this assignment, I will choose to use a real-time chat application.
@@ -32,7 +33,7 @@ Alternatively, python can use websockets directly using the websockets module.
 
 Sample code of using websockets in python:
 
-...
+```
 import asyncio
 import websockets
 
@@ -47,7 +48,7 @@ start_server = websockets.serve(echo, "localhost", 8765)
 # Run the WebSocket server forever
 asyncio.get_event_loop().run_until_complete(start_server)
 asyncio.get_event_loop().run_forever()
-...
+```
 
 
 
