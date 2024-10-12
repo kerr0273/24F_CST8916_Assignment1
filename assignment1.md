@@ -13,7 +13,7 @@ Introduction
 In this assignment, I will choose to use a real-time chat application.
 
 
-Section 1
+# Section 1
 
 Both REST and GraphQL could be used in a chat application.  (OpenAI, ChatGPT)
 
@@ -25,7 +25,9 @@ Configuration settings can use a GraphQL implementation.  There are two reasons 
 
 For the live communication aspects of the application WebSockets will be used because we want a communication tunnel that will be fixed for the duration of the chat.
 
-WebSockets for Real-time Communication
+# Section 2
+
+## WebSockets for Real-time Communication
 
 The WebSockets module would be implemented in python using the FastAPI() library. (OpenAI, ChapgGPT).  FastAPI is a framework that implements WebSockets (Fastapi).  
 
@@ -49,6 +51,28 @@ start_server = websockets.serve(echo, "localhost", 8765)
 asyncio.get_event_loop().run_until_complete(start_server)
 asyncio.get_event_loop().run_forever()
 ```
+
+## Websockets vs. REST and GraphQL
+
+The key features of WebSockets are: (openAI, ChatGPT)
+- Persistent Connection
+- Low Latency
+- Bidirectional
+
+REST and GraphQL are: (openAI, ChatGPT)
+- stateless
+- Unidirectional
+- Polling for Real-Time Data 
+
+The differences between WebSockets and REST (and GraphQL) are that a new connection needs to be made and authorized with each message using REST, REST is unidirectional, and REST would need to implement polling.  GraphQL does have a subscription feature.  However, it is often implemented using websockets (OpenAI, ChatGPT).
+
+Section 3: Techologoy Recommendation and Justification
+
+The recommended coding language is python.  That is for me.  Pretty much all languages will be able to implement code to acheive the task, but I know and like python.  It has the FastAPI library which can save a lot of time figuring out websockets.  Or it can use the websocket library directly.  Also, there is lots of documentation for python.
+
+Python has many different webservers that can be used.  I saw a lot of examples using uvicorn, which I assume is an upgrade from gunicorn.  These are production quality servers for running python code.  Python has two frameworks that can be used: Flast and Django.  they are both suitable.  Finally, containerizing a python Flask project has a lot of examples online.
+
+
 
 
 
