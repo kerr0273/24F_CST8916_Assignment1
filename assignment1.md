@@ -30,8 +30,9 @@ The WebSockets module would be implemented in python using the FastAPI() library
 
 Alternatively, python can use websockets directly using the websockets module.  
 
-A sample of using websockets in python:
-`
+Sample code of using websockets in python:
+
+...
 import asyncio
 import websockets
 
@@ -46,7 +47,8 @@ start_server = websockets.serve(echo, "localhost", 8765)
 # Run the WebSocket server forever
 asyncio.get_event_loop().run_until_complete(start_server)
 asyncio.get_event_loop().run_forever()
-`
+...
+
 
 
 
